@@ -9,6 +9,43 @@ p{
     color:#ffffff;
 }
 
+h1{
+    color:#ffffff;
+}
+
+li{
+    color: #ffffff;
+}
+
+ol{
+    color: #ffffff;
+    width: 20%;
+    background-color: #dececf;
+    margin-left: 30px;
+    padding: 20px;
+}
+
+ol li{
+    margin: 5px;
+}
+
+#intro{
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+#intro p{
+    color:#ffffff;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#website-img{
+    max-width: 45%;
+    text-align: center;
+    margin: 2%;
+}
+
 nav{
     width: 100%;
     margin: 0;
@@ -17,8 +54,6 @@ nav{
     top: 0; 
     z-index: 1000;
 }
-
-
 
 nav ul {
     display: flex;
