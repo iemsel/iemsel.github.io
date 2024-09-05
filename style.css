@@ -35,6 +35,8 @@ ol li{
     margin: 5px;
 }
 
+
+/* ids */
 #intro{
     margin-left: 15%;
     margin-right: 5%;
@@ -79,6 +81,10 @@ ol li{
     margin-right: 5%;
 }
 
+/* end ids */
+
+
+/* top navigation */
 nav{
     width: 100%;
     margin: 0;
@@ -122,7 +128,10 @@ nav ul {
     background-color: #dececf;
     color: #2c2c34;
   }
+/* end nav */
 
+
+/* side menus */
 aside {
     width: 10%;
     background-color: #2c2c34;
@@ -153,3 +162,27 @@ aside {
     background-color: #948b90;
     color: rgb(0, 0, 0);
   }
+/* end site menus */
+
+
+/* faqs */
+.faq_item {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.faq_title {
+    color: #ffffff;
+}
+
+.faq_content {
+    color: #ffffff;
+}
+
+#faqs{
+    text-align: center;
+}
+/* end faqs */
