@@ -13,6 +13,10 @@ h1{
     color:#ffffff;
 }
 
+a{
+    color: #ffffff;
+}
+
 hr{
     background-color: #dececf;
     height: 2px;
@@ -176,10 +180,11 @@ aside {
 
 .faq_title {
     color: #ffffff;
+    font-weight: bold;
 }
 
 .faq_content {
-    color: #ffffff;
+    color: #dececf;
 }
 
 #faqs{
