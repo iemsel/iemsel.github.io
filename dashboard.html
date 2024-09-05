@@ -16,6 +16,143 @@
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="blog.html">Blog</a></li>
         </ul>
-      </nav>
-  </body>
+    </nav>
+    <h1>Study Monitor</h1>
+
+    
+    <h2>Course 1: Introduction to Computer Science</h2>
+    <table>
+        <tr>
+            <th>Test Item</th>
+            <th>Grade Input</th>
+            <th>Grade</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Program- & Career Orientation (CU75001V3)</td>
+            <td><input type="number" min="0" max="10" step="0.1" data-ec="2.5"></td>
+            <td>2.5 EC</td>
+            <td class="pending">Pending</td>
+        </tr>
+        <tr>
+            <td>Computer Science Basics (CU75002V2)</td>
+            <td><input type="number" min="0" max="10" step="0.1" data-ec="5"></td>
+            <td>5 EC</td>
+            <td class="pending">Pending</td>
+        </tr>
+        <tr>
+            <td>Programming Basics (CU75003V1)</td>
+            <td><input type="number" min="0" max="10" step="0.1" data-ec="5"></td>
+            <td>5 EC</td>
+            <td class="pending">Pending</td>
+        </tr>
+        <tr>
+            <td>Personal Professional Development Exploration (CU75068V3)</td>
+            <td><input type="number" min="0" max="10" step="0.1" data-ec="12.5"></td>
+            <td>12.5 EC</td>
+            <td class="pending">Pending</td>
+        </tr>
+    </table>
+
+    <h2>Course 2: Game Development</h2>
+    <table>
+        <tr>
+            <th>Test Item</th>
+            <th>Grade Input</th>
+            <th>Grade</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Object-Oriented Programming (CU75004V1)</td>
+            <td><input type="number" min="0" max="10" step="0.1" data-ec="10"></td>
+            <td>10 EC</td>
+            <td class="pending">Pending</td>
+        </tr>
+    </table>
+
+    <h2>Course 3: Modern Software Development 1</h2>
+    <table>
+        <tr>
+            <th>Test Item</th>
+            <th>Grade Input</th>
+            <th>Grade</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Framework Project 1 (CU75080V2)</td>
+            <td><input type="number" min="0" max="10" step="0.1" data-ec="10"></td>
+            <td>10 EC</td>
+            <td class="pending">Pending</td>
+        </tr>
+        <tr>
+            <td>Business IT Consultancy Basics (CU75081V1)</td>
+            <td><input type="number" min="0" max="10" step="0.1" data-ec="2.5"></td>
+            <td>2.5 EC</td>
+            <td class="pending">Pending</td>
+        </tr>
+    </table>
+
+    <h2>Course 4: Modern Software Development 2</h2>
+    <table>
+        <tr>
+            <th>Test Item</th>
+            <th>Grade Input</th>
+            <th>Grade</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Modern Software Development 2</td>
+            <td><input type="number" min="0" max="10" step="0.1" data-ec="10"></td>
+            <td>10 EC</td>
+            <td class="pending">Pending</td>
+        </tr>
+    </table>
+
+    <h2>Extra</h2>
+    <table>
+        <tr>
+            <th>Test Item</th>
+            <th>Grade Input</th>
+            <th>Grade</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Personality Choice</td>
+            <td><input type="number" min="0" max="10" step="0.1" data-ec="1.25"></td>
+            <td>1.25 EC</td>
+            <td class="pending">Pending</td>
+        </tr>
+    </table>
+
+    <h2>Progress</h2>
+    <p>Total Credits: <strong id="total-credits">0/60 EC</strong></p>
+    <div class="progress-bar">
+        <div class="progress-bar-fill" id="progress-bar-fill" style="width: 0%;">0%</div>
+    </div>
+    <p>NBSA Boundary: <strong>45 EC</strong> (Need at least 45 EC to pass)</p>
+    <script>
+        function updateProgress() {
+            let totalEC = 0;
+            let maxEC = 60; // Total EC required for full completion
+            
+            // Select all input fields and calculate the total EC
+            document.querySelectorAll('input[type="number"]').forEach(input => {
+                if (input.value) {
+                    totalEC += parseFloat(input.dataset.ec);
+                }
+            });
+
+            // Update the progress bar and text
+            let progressPercentage = (totalEC / maxEC) * 100;
+            document.getElementById('progress-bar-fill').style.width = progressPercentage + '%';
+            document.getElementById('progress-bar-fill').textContent = Math.round(progressPercentage) + '%';
+            document.getElementById('total-credits').textContent = totalEC.toFixed(2) + '/60 EC';
+        }
+
+        // Add event listeners to input fields to update progress on change
+        document.querySelectorAll('input[type="number"]').forEach(input => {
+            input.addEventListener('input', updateProgress);
+        });
+    </script>
+</body>
 </html>
