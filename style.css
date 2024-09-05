@@ -13,6 +13,11 @@ h1{
     color:#ffffff;
 }
 
+hr{
+    background-color: #dececf;
+    height: 2px;
+}
+
 li{
     color: #ffffff;
 }
@@ -21,8 +26,9 @@ ol{
     color: #ffffff;
     width: 20%;
     background-color: #dececf;
-    margin-left: 30px;
-    padding: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 25px;
 }
 
 ol li{
@@ -44,6 +50,33 @@ ol li{
     max-width: 45%;
     text-align: center;
     margin: 2%;
+}
+
+#mochi{
+    flex: 0.80;
+    text-size-adjust: 40px;
+    margin: 5%;
+}
+
+#mochi-img{
+    max-width: 33%;
+}
+
+#about-me{
+    flex: 1;  
+    flex: 0.20;
+}
+
+#profile{
+    display: flex;
+    justify-content: space-between; 
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+#questions{
+    margin-left: 15%;
+    margin-right: 5%;
 }
 
 nav{
