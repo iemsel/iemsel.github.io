@@ -39,6 +39,21 @@ ol li{
     margin: 5px;
 }
 
+/* classes */
+.center{
+    text-align: center;
+}
+
+.profile{
+    display: flex;
+    justify-content: space-between; 
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+.mochi-img{
+    max-width: 33%;
+}
 
 /* ids */
 #intro{
@@ -64,21 +79,13 @@ ol li{
     margin: 5%;
 }
 
-#mochi-img{
-    max-width: 33%;
-}
 
 #about-me{
     flex: 1;  
     flex: 0.20;
 }
 
-#profile{
-    display: flex;
-    justify-content: space-between; 
-    margin-left: 15%;
-    margin-right: 5%;
-}
+
 
 #questions{
     margin-left: 15%;
@@ -193,7 +200,11 @@ aside {
 /* end faqs */
 
 /* dashboard progress */
-
+.dashboard{
+    width:70%;
+    margin-right:auto;
+    margin-left:auto;
+}
 table {
     width: 100%;
     border-collapse: collapse;
@@ -201,7 +212,7 @@ table {
 }
 th, td {
     color: #ffffff;
-    border: 1px solid #2c2c34;
+    border: 2px solid #2c2c34;
     padding: 8px;
     text-align: center;
     max-width: 250px;
@@ -233,6 +244,9 @@ th {
     color: white;
 }
 .first-column {
-    min-width: 250px;
+    width: 40%;
+}
+.second-column {
+    width: 20%;
 }
 /* end dashboard */

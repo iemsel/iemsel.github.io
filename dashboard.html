@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My profile</title>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -17,140 +19,190 @@
             <li><a href="blog.html">Blog</a></li>
         </ul>
     </nav>
-    <h1>Study Monitor</h1>
+    <section class="dashboard">
+        <h1 class="center">Study Monitor</h1>
+        <hr>
+        <h2>Progress</h2>
+        <p>Total Credits: <strong id="total-credits">0/60 EC</strong></p>
+        <div class="progress-bar">
+            <div class="progress-bar-fill" id="progress-bar-fill" style="width: 0%;">0%</div>
+        </div>
+        <p>NBSA Boundary: <strong>45 EC</strong> (Need at least 45 EC to pass)</p>
 
-    
-    <h2>Course 1: Introduction to Computer Science</h2>
-    <table>
-        <tr>
-            <th class="first-column">Test Item</th>
-            <th>Grade Input</th>
-            <th>Max Grade</th>
-            <th>Status</th>
-        </tr>
-        <tr>
-            <td>Program- & Career Orientation (CU75001V3)</td>
-            <td><input type="number" min="0" max="2.5" step="0.1" data-max="2.5"></td>
-            <td>2.5 EC</td>
-            <td class="pending">Pending</td>
-        </tr>
-        <tr>
-            <td>Computer Science Basics (CU75002V2)</td>
-            <td><input type="number" min="0" max="5" step="0.1" data-max="5"></td>
-            <td>5 EC</td>
-            <td class="pending">Pending</td>
-        </tr>
-        <tr>
-            <td>Programming Basics (CU75003V1)</td>
-            <td><input type="number" min="0" max="5" step="0.1" data-max="5"></td>
-            <td>5 EC</td>
-            <td class="pending">Pending</td>
-        </tr>
-        <tr>
-            <td>Personal Professional Development Exploration (CU75068V3)</td>
-            <td><input type="number" min="0" max="12.5" step="0.1" data-max="12.5"></td>
-            <td>12.5 EC</td>
-            <td class="pending">Pending</td>
-        </tr>
-    </table>
 
-    <h2>Course 2: Game Development</h2>
-    <table>
-        <tr>
-            <th class="first-column">Test Item</th>
-            <th>Grade Input</th>
-            <th>Max Grade</th>
-            <th>Status</th>
-        </tr>
-        <tr>
-            <td>Object-Oriented Programming (CU75004V1)</td>
-            <td><input type="number" min="0" max="10" step="0.1" data-max="10"></td>
-            <td>10 EC</td>
-            <td class="pending">Pending</td>
-        </tr>
-    </table>
+        <h2>Course 1: Introduction to Computer Science</h2>
+        <table>
+            <tr>
+                <th class="first-column">Test Item</th>
+                <th class="second-column">Assessment</th>
+                <th>EC Input</th>
+                <th>Max EC</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Program- & Career Orientation (CU75001V3)</td>
+                <td>Presentation</td>
+                <td><input type="number" min="0" max="2.5" step="0.1" data-max="2.5"></td>
+                <td>2.5 EC</td>
+                <td class="pending">Pending</td>
+            </tr>
+            <tr>
+                <td>Computer Science Basics (CU75002V2)</td>
+                <td>Written knowledge test</td>
+                <td><input type="number" min="0" max="5" step="0.1" data-max="5"></td>
+                <td>5 EC</td>
+                <td class="pending">Pending</td>
+            </tr>
+            <tr>
+                <td>Programming Basics (CU75003V1)</td>
+                <td>Case Study Exam</td>
+                <td><input type="number" min="0" max="5" step="0.1" data-max="5"></td>
+                <td>5 EC</td>
+                <td class="pending">Pending</td>
+            </tr>
+            <tr>
+                <td>Personal Professional Development Exploration (CU75068V3)</td>
+                <td>Criterium focused interview</td>
+                <td><input type="number" min="0" max="12.5" step="0.1" data-max="12.5"></td>
+                <td>12.5 EC</td>
+                <td class="pending">Pending</td>
+            </tr>
+        </table>
 
-    <h2>Course 3: Modern Software Development 1</h2>
-    <table>
-        <tr>
-            <th class="first-column">Test Item</th>
-            <th>Grade Input</th>
-            <th>Max Grade</th>
-            <th>Status</th>
-        </tr>
-        <tr>
-            <td>Framework Project 1 (CU75080V2)</td>
-            <td><input type="number" min="0" max="10" step="0.1" data-max="10"></td>
-            <td>10 EC</td>
-            <td class="pending">Pending</td>
-        </tr>
-        <tr>
-            <td>Business IT Consultancy Basics (CU75081V1)</td>
-            <td><input type="number" min="0" max="2.5" step="0.1" data-max="2.5"></td>
-            <td>2.5 EC</td>
-            <td class="pending">Pending</td>
-        </tr>
-    </table>
+        <h2>Course 2: Game Development</h2>
+        <table>
+            <tr>
+                <th class="first-column">Test Item</th>
+                <th class="second-column">Assessment</th>
+                <th>EC Input</th>
+                <th>Max EC</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Object-Oriented Programming (CU75004V1)</td>
+                <td>Group Assessment</td>
+                <td><input type="number" min="0" max="10" step="0.1" data-max="10"></td>
+                <td>10 EC</td>
+                <td class="pending">Pending</td>
+            </tr>
+        </table>
 
-    <h2>Course 4: Modern Software Development 2</h2>
-    <table>
-        <tr>
-            <th class="first-column">Test Item</th>
-            <th>Grade Input</th>
-            <th>Max Grade</th>
-            <th>Status</th>
-        </tr>
-        <tr>
-            <td>Modern Software Development 2</td>
-            <td><input type="number" min="0" max="10" step="0.1" data-max="10"></td>
-            <td>10 EC</td>
-            <td class="pending">Pending</td>
-        </tr>
-    </table>
+        <h2>Course 3: Modern Software Development 1</h2>
+        <table>
+            <tr>
+                <th class="first-column">Test Item</th>
+                <th class="second-column">Assessment</th>
+                <th>EC Input</th>
+                <th>Max EC</th>
+                <th>Status</th>
+            </tr>
+            <!-- First part -->
+            <tr>
+                <td rowspan="4">Framework Project 1 (CU75080V2)</td>
+                <td>Case Study Exam</td>
+                <td><input type="number" min="0" max="4" step="0.1" data-max="4"></td>
+                <td>4 EC</td>
+                <td class="pending">Pending</td>
+            </tr>
+            <tr>
+                <td>Database exam</td>
+                <td><input type="number" min="0" max="1" step="0.1" data-max="1"></td>
+                <td>1 EC</td>
+                <td class="pending">Pending</td>
+            </tr>
+            <tr>
+                <td>Group presentation</td>
+                <td><input type="number" min="0" max="2.5" step="0.1" data-max="2.5"></td>
+                <td>2.5 EC</td>
+                <td class="pending">Pending</td>
+            </tr>
+            <tr>
+                <td>Group porfolio</td>
+                <td><input type="number" min="0" max="2.5" step="0.1" data-max="2.5"></td>
+                <td>2.5 EC</td>
+                <td class="pending">Pending</td>
+            </tr>
+            <!-- Second part -->
+            <tr>
+                <td>Business IT Consultancy Basics (CU75081V1)</td>
+                <td>Video</td>
+                <td><input type="number" min="0" max="2.5" step="0.1" data-max="2.5"></td>
+                <td>2.5 EC</td>
+                <td class="pending">Pending</td>
+            </tr>
+        </table>
 
-    <h2>Extra</h2>
-    <table>
-        <tr>
-            <th class="first-column">Test Item</th>
-            <th>Grade Input</th>
-            <th>Max Grade</th>
-            <th>Status</th>
-        </tr>
-        <tr>
-            <td>Personality Choice 1</td>
-            <td><input type="number" min="0" max="1.25" step="0.1" data-max="1.25"></td>
-            <td>1.25 EC</td>
-            <td class="pending">Pending</td>
-        </tr>
-        <tr>
-            <td>Personality Choice 2</td>
-            <td><input type="number" min="0" max="1.25" step="0.1" data-max="1.25"></td>
-            <td>1.25 EC</td>
-            <td class="pending">Pending</td>
-        </tr>
-    </table>
+        <h2>Course 4: Modern Software Development 2</h2>
+        <table>
+            <tr>
+                <th class="first-column">Test Item</th>
+                <th class="second-column">Assessment</th>
+                <th>EC Input</th>
+                <th>Max EC</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td rowspan="3">Modern Software Development 2</td>
+                <td>Final group delivery</td>
+                <td><input type="number" min="0" max="2.5" step="0.1" data-max="2.5"></td>
+                <td>2.5 EC</td>
+                <td class="pending">Pending</td>
+            </tr>
+            <tr>
+                <td>Individual project</td>
+                <td><input type="number" min="0" max="2.5" step="0.1" data-max="2.5"></td>
+                <td>2.5 EC</td>
+                <td class="pending">Pending</td>
+            </tr>
+            <tr>
+                <td>IT Development portfolio</td>
+                <td><input type="number" min="0" max="5" step="0.1" data-max="5"></td>
+                <td>5 EC</td>
+                <td class="pending">Pending</td>
+            </tr>
+        </table>
 
-    <h2>Progress</h2>
-    <p>Total Credits: <strong id="total-credits">0/60 EC</strong></p>
-    <div class="progress-bar">
-        <div class="progress-bar-fill" id="progress-bar-fill" style="width: 0%;">0%</div>
-    </div>
-    <p>NBSA Boundary: <strong>45 EC</strong> (Need at least 45 EC to pass)</p>
-    
+        <h2>Extra</h2>
+        <table>
+            <tr>
+                <th class="first-column">Test Item</th>
+                <th class="second-column">Assessment</th>
+                <th>EC Input</th>
+                <th>Max EC</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Personality Choice 1</td>
+                <td>Portfolio</td>
+                <td><input type="number" min="0" max="1.25" step="0.1" data-max="1.25"></td>
+                <td>1.25 EC</td>
+                <td class="pending">Pending</td>
+            </tr>
+            <tr>
+                <td>Personality Choice 2</td>
+                <td>Portfolio</td>
+                <td><input type="number" min="0" max="1.25" step="0.1" data-max="1.25"></td>
+                <td>1.25 EC</td>
+                <td class="pending">Pending</td>
+            </tr>
+        </table>
+    </section>
+
+
     <script>
         function updateProgress() {
             let totalEC = 0;
-            let maxEC = 60; 
-            
+            let maxEC = 60;
+
 
             document.querySelectorAll('input[type="number"]').forEach(input => {
-                const maxGrade = parseFloat(input.dataset.max);
-                const gradeInput = parseFloat(input.value);
+                const maxEC = parseFloat(input.dataset.max);
+                const ECInput = parseFloat(input.value);
 
-                if (gradeInput > 0) {
+                if (ECInput > 0) {
                     const statusCell = input.parentElement.nextElementSibling.nextElementSibling;
-                    
-                    if (gradeInput < 0.7 * maxGrade) {
+
+                    if (ECInput < 0.75 * maxEC) {
                         statusCell.textContent = 'Failed';
                         statusCell.className = 'failed';
                     } else {
@@ -173,4 +225,5 @@
         });
     </script>
 </body>
+
 </html>
