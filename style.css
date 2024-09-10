@@ -40,6 +40,11 @@ ol li{
 }
 
 /* classes */
+.credits{
+    margin-right: 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
 .center{
     text-align: center;
 }
@@ -55,6 +60,21 @@ ol li{
     max-width: 33%;
 }
 
+.website-img{
+    max-width: 45%;
+    text-align: center;
+    margin: 2%;
+}
+
+.blog{
+    display: flex;
+    justify-content: center;
+}
+
+.style-blog li, a{
+    color: #000;
+}
+
 /* ids */
 #intro{
     margin-left: 15%;
@@ -67,11 +87,6 @@ ol li{
     margin-bottom: 10px;
 }
 
-#website-img{
-    max-width: 45%;
-    text-align: center;
-    margin: 2%;
-}
 
 #mochi{
     flex: 0.80;
@@ -80,12 +95,9 @@ ol li{
 }
 
 
-#about-me{
-    flex: 1;  
+#about-me{ 
     flex: 0.20;
 }
-
-
 
 #questions{
     margin-left: 15%;
@@ -103,6 +115,9 @@ nav{
     position: sticky;
     top: 0; 
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2C2C34;
 }
 
 nav ul {
@@ -110,12 +125,12 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #2C2C34;
+    width: 50%;
   }
   
   nav ul li {
     float: left;
-    width: 10%;
+    width: 150px;
   }
   
   nav ul li a {
@@ -194,7 +209,7 @@ aside {
     color: #dececf;
 }
 
-#faqs{
+.faqs{
     text-align: center;
 }
 /* end faqs */

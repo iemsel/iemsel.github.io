@@ -18,6 +18,7 @@
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="blog.html">Blog</a></li>
         </ul>
+        <p class="credits">Naimi de Jong</p>
     </nav>
     <section class="dashboard">
         <h1 class="center">Study Monitor</h1>
@@ -40,7 +41,7 @@
                 <th>Status</th>
             </tr>
             <tr>
-                <td>Program- & Career Orientation (CU75001V3)</td>
+                <td>Program- and Career Orientation (CU75001V3)</td>
                 <td>Presentation</td>
                 <td><input type="number" min="0" max="2.5" step="0.1" data-max="2.5"></td>
                 <td>2.5 EC</td>
@@ -174,14 +175,14 @@
             <tr>
                 <td>Personality Choice 1</td>
                 <td>Portfolio</td>
-                <td><input type="number" min="0" max="1.25" step="0.1" data-max="1.25"></td>
+                <td><input type="number" min="0" max="1.25" step="0.05" data-max="1.25"></td>
                 <td>1.25 EC</td>
                 <td class="pending">Pending</td>
             </tr>
             <tr>
                 <td>Personality Choice 2</td>
                 <td>Portfolio</td>
-                <td><input type="number" min="0" max="1.25" step="0.1" data-max="1.25"></td>
+                <td><input type="number" min="0" max="1.25" step="0.05" data-max="1.25"></td>
                 <td>1.25 EC</td>
                 <td class="pending">Pending</td>
             </tr>
@@ -198,8 +199,9 @@
             document.querySelectorAll('input[type="number"]').forEach(input => {
                 const maxEC = parseFloat(input.dataset.max);
                 const ECInput = parseFloat(input.value);
-
-                if (ECInput > 0) {
+                
+                // Changing status, making totalec to all ec input
+                if (ECInput >= 0) {
                     const statusCell = input.parentElement.nextElementSibling.nextElementSibling;
 
                     if (ECInput < 0.75 * maxEC) {
@@ -214,12 +216,14 @@
                 }
             });
 
+            // Progress bar calculation
             let progressPercentage = (totalEC / maxEC) * 100;
             document.getElementById('progress-bar-fill').style.width = progressPercentage + '%';
             document.getElementById('progress-bar-fill').textContent = Math.round(progressPercentage) + '%';
             document.getElementById('total-credits').textContent = totalEC.toFixed(2) + '/60 EC';
         }
 
+        //when the fuction should run
         document.querySelectorAll('input[type="number"]').forEach(input => {
             input.addEventListener('input', updateProgress);
         });
