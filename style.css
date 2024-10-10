@@ -29,6 +29,22 @@ a{
     color: #ffffff;
 }
 
+footer{
+    display: block;
+    background: #2C2C34;
+    margin: 0;
+}
+
+footer p{
+    margin: 0;
+    padding: 2px;
+    text-align: center;
+}
+
+.starbg a{
+    text-decoration: none;
+}
+
 hr{
     background-color: #dececf;
     height: 2px;
@@ -115,7 +131,7 @@ ol li{
     background-color: #2C2C34;
     border:2px solid #000000;
 }
-
+/* end classes */
 
 /* ids */
 #intro{
@@ -199,7 +215,7 @@ nav ul {
 /* end nav */
 
 
-/* side menus */
+/* aside menus */
 aside {
     width: 10%;
     background-color: #2c2c34;
@@ -230,7 +246,7 @@ aside {
     background-color: #948b90;
     color: rgb(0, 0, 0);
   }
-/* end site menus */
+/* end aside menus */
 
 
 /* faqs */
