@@ -95,6 +95,8 @@ ol li{
 
 .flex{
     display: flex;
+    flex: auto;
+    align-content: center;
 }
 
 .mochi-img{
@@ -130,6 +132,11 @@ ol li{
 .blog:hover{
     background-color: #2C2C34;
     border:2px solid #000000;
+}
+
+.rightText{
+    width: 50%;
+    align-content: right;
 }
 /* end classes */
 
