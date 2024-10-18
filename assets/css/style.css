@@ -1,0 +1,236 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #494850;
+    margin-bottom: 0;
+  }
+
+
+.starbg{
+    background-image: url(/iemsel.github.io/img/starbg.png);
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+p, h1, h2, a, ul, li, ol{
+    color:#ffffff;
+}
+
+footer{
+    display: block;
+    background: #2C2C34;
+    margin: 0;
+}
+
+footer p{
+    margin: 0;
+    padding: 2px;
+    text-align: center;
+}
+
+.starbg a{
+    text-decoration: none;
+}
+
+hr{
+    background-color: #dececf;
+    height: 2px;
+}
+
+ul{
+    font-weight: bold;
+}
+
+li{
+    font-weight: 100;
+}
+
+ol{
+    width: 20%;
+    background-color: #948b90;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 25px;
+}
+
+ol li{
+    margin: 5px;
+}
+
+/* classes */
+.credits{
+    margin-right: 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.center{
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile{
+    display: flex;
+    justify-content: space-between; 
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+.flex{
+    display: flex;
+    flex: auto;
+    align-content: center;
+}
+
+.mochi-img{
+    max-width: 33%;
+}
+
+.website-img{
+    max-width: 45%;
+    text-align: center;
+    margin: 2%;
+}
+
+.hz-logo{
+    margin-left: 30%;
+    height: 125px;
+}
+
+.blog{
+    justify-content: center;
+    width:50%;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border:2px solid #dececf;
+    background-color: #948b90;
+}
+
+.blog-text{
+    padding-left: 20px;
+}
+
+.blog:hover{
+    background-color: #2C2C34;
+    border:2px solid #000000;
+}
+
+.right-text{
+    width: 50%;
+    align-content: right;
+}
+/* end classes */
+
+/* ids */
+#intro{
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+#intro p{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+#mochi{
+    flex: 0.80;
+    text-size-adjust: 40px;
+    margin: 5%;
+}
+
+
+#about-me{ 
+    flex: 0.20;
+}
+
+#questions{
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+/* end ids */
+
+
+/* top navigation */
+nav{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0; 
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2C2C34;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+  }
+  
+  nav ul li {
+    float: left;
+    width: 20%;
+  }
+  
+  nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover:not(.active) {
+    background-color: #948b90;
+  }
+
+  .active {
+    background-color: #dececf;
+    color: #2c2c34;
+  }
+/* end nav */
+
+
+/* aside menus */
+aside {
+    width: 10%;
+    background-color: #2c2c34;
+    height: 100%;
+    position: fixed;
+    padding: 0;
+    overflow: auto;
+  }
+  
+  .side-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .side-menu li {
+    margin-bottom: 10px;
+  }
+  
+  .side-menu li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .side-menu li a:hover {
+    background-color: #948b90;
+  }
+/* end aside menus */

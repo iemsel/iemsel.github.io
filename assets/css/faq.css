@@ -1,0 +1,25 @@
+/* faqs */
+.faq_item {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    width: 70%;
+    margin-right:auto;
+    margin-left:auto;
+  }
+  
+  .faq_title {
+      color: #ffffff;
+      font-weight: bold;
+  }
+  
+  .faq_content {
+      color: #dececf;
+  }
+  
+  .faqs{
+      text-align: center;
+  }
+  /* end faqs */
