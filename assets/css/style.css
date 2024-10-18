@@ -8,7 +8,7 @@ html, body {
 
 
 .starbg{
-    background-image: url(/iemsel.github.io/img/starbg.png);
+    background-image: url(../../img/starbg.png);
     background-size: 100% auto;
     background-repeat: repeat-y;
 }
